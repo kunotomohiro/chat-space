@@ -1,9 +1,10 @@
-# README
+# DB設計
 
 This README would normally document whatever steps are necessary to get the
-application up and running.
 
 Things you may want to cover:
+|------|----|------|
+|name|string|index: true, null: false, unique: true|
 
 * Ruby version
 
@@ -17,8 +18,7 @@ Things you may want to cover:
 
 * How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+|Column|Type|Options|
 
 * ...
