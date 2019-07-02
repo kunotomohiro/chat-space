@@ -1,0 +1,40 @@
+.Header
+  .Header-left-header
+    .Header-left__box
+      %p test
+      .Header-left__logo
+        %ul
+          = link_to "", class: "Header-left__logo--edit" do
+            = fa_icon 'edit'
+          = link_to "", class: "Header-left__logo--cog" do
+            = fa_icon 'cog'
+  .Header-bottom
+    %p.group-name test
+    %p.message test
+.Contents
+  .Contents-header
+    .Contents-header-left
+      %h2.current-group
+        test
+      %ul.member-list
+        Member :
+        %li.member-name
+          test       
+    .Edit-btn
+      = link_to "", class: "Edit-btn--btn" do
+        Edit
+  .Contents-messages
+    .Contents-message
+      .Contents-message__info
+        %p.Contents-message__info__name test
+        %p.Contents-message__info__date 2019/7/1
+      %p.Contents-message__text test   
+  .Form
+    %form.new-message
+      %input.new-message__input{placeholder: "type a message"}
+        %label.label
+          %span.filelabel
+            = fa_icon 'image', class: "image"
+          %input{type: "file", name: "datafile", id: "filesend"}
+      = link_to "", class: "Form-input-box-Send" do
+        Send
