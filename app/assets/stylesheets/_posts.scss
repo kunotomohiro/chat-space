@@ -1,48 +1,9 @@
-  .Header {
-    color: white;
-    width: 300px;
-    float: left;
-    &-left-header {
-      background-color: #253141;
-      height: 100px;
-      display: flex;
-      align-items: center;
-      padding: 0 20px;
-    }
-    &-left__box {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      font-weight: bold;
-    }
-    &-left__logo {
-      display: flex;
-      &--edit {
-        color: white;
-        text-decoration: none;
-      }
-      &--cog {
-        color: white;
-      }
-    }
-    &-bottom{
-      height: calc(100vh - 100px);
-      background-color: #2f3e51;
-      p{
-      padding: 20px 20px 5px 20px;
-      font-size: 15px;
-       }
-    }
-    
-    .message {
-      font-size: 11px;
-      padding: 0px 20px 40px 20px;
-    }
-  }
-
+.Wrapper{
+  display: flex;
+}
   .Contents {
     width: calc(100vw - 300px);
-    float: left;
+    float: right;
     &-header {
       height: 100px;
       padding: 0 40px;

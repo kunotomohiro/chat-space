@@ -1,0 +1,29 @@
+.Wrapper
+  = render 'side_bar'
+  .Contents
+    .Contents-header
+      .Contents-header-left
+        %h2.current-group
+          test
+        %ul.member-list
+          Member :
+          %li.member-name
+            test       
+      .Edit-btn
+        = link_to "#", class: "Edit-btn--btn" do
+          Edit
+    .Contents-messages
+      .Contents-message
+        .Contents-message__info
+          %p.Contents-message__info__name test
+          %p.Contents-message__info__date 2019/7/1
+        %p.Contents-message__text test   
+    .Form
+      %form.new-message
+        %input.new-message__input{placeholder: "type a message"}
+          %label.label
+            %span.filelabel
+              = fa_icon 'image', class: "image"
+            %input{type: "file", name: "datafile", id: "filesend"}
+        = link_to "#", class: "Form-input-box-Send" do
+          Send
