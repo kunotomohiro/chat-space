@@ -1,0 +1,12 @@
+$black: black;
+$white: white;
+$light_gray: lightgray;
+$light_blue: lightblue;
+$side_blue_dark: navy;
+$side_blue_light: lightblue;
+$side_header_font: 14px;
+$side_group_name: 15px;
+$side_group_message: 11px;
+@mixin flexbox {
+  display: flex;
+} 
