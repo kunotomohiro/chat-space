@@ -7,6 +7,7 @@
     height: 100px;
     line-height: 100px;
     padding: 0 20px;
+    text-decoration: none;
     &__name {
       display: inline-block;
       font-size: $side_header_font;
@@ -33,6 +34,9 @@
     .group {
       box-sizing: border-box;
       padding: 20px 0 40px;
+      &_link{
+        text-decoration: none;
+      }
       &__name {
         color: $white;
         font-size: $side_group_name;
