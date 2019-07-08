@@ -47,4 +47,20 @@ $(function(){
     })
     return false;
   })
+
+  var reloadMessages = function() {
+    last_message_id = spe;
+    $ajax({
+      url: '',
+      type: 'GET',
+      dataType: 'json',
+      data: {id: last_message_id}
+    })
+    .done(function(message) {
+      console.log('success');
+    })
+    .fail(function(){
+      console.log('error')
+    });
+  };
 });
