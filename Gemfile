@@ -49,17 +49,16 @@ group :development, :test do
   gem 'capistrano3-unicorn'
 end
 
-group :development do
-  # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
-  gem 'listen', '~> 3.0.5'
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
-end
 
 group :production do
   gem 'unicorn', '5.4.1'
+end
+
+group :development do
+  # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
+  gem 'web-console', '~> 2.0'
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'spring'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
